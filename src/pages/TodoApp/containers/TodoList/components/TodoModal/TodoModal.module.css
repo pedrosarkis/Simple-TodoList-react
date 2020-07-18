@@ -1,0 +1,80 @@
+.backdrop {
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    opacity: 0.5;
+    z-index: 888;
+}
+
+.modal {
+    width: 800px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #4834d4;
+    top: calc(50vh - 100px);
+    left: calc(50vw - 400px);
+    position: fixed;
+    z-index: 999;
+}
+
+.modal form {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    gap: 10px;
+}
+
+.input {
+    width: 420px;
+    height: 30px;
+    padding-left: 10px;
+    border: none;
+    background-color: #dff9fb;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #4834d4
+}
+
+.error {
+    color: #dff9fb;
+    font-size:  14px;
+}
+
+.submit {
+    width: 180px;
+    height: 30px;
+    justify-self: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #897de3;
+    cursor: pointer;
+    font-size: 16px;
+    color: #211861;
+}
+
+.closeModal {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #dff9fb;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.closeModal svg  {
+    width: 50%;
+    height: 50%;
+}
+
+.closeModal svg path  {
+    fill: #4834d4;
+}
